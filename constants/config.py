@@ -39,4 +39,4 @@ COMMAND_PREFIX: str = "$"
 
 # The file where DJ roles are stored.
 # DJ roles are roles that have special permissions to use certain music commands.
-DJ_ROLES_FILE: str = "data/dj_roles.txt"
+DJ_ROLES_FILE_PATH: str = "data/dj_roles.txt"
