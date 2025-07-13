@@ -1,4 +1,4 @@
-# 🎧 DiscordMusicBot — Modular, Secure, and Showcase-Ready
+# 🎧 discord-music-bot — Modular, Secure, and Showcase-Ready
 
 This repository demonstrates a production-level Discord bot for music playback, designed as a proof-of-skill project. It emphasizes modular architecture, secure configuration handling, and flexible setup to support customization and scalability.
 
@@ -43,7 +43,7 @@ DiscordMusicBot/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/discord-music-bot.git
+git clone https://github.com/xNythal/discord-music-bot.git
 cd discord-music-bot
 ```
 
@@ -52,12 +52,15 @@ cd discord-music-bot
 pip install -r requirements.txt
 ```
 
+### 2. Install FFmpeg
+Head over to [FFmpeg Download](https://ffmpeg.org/download.html) and under "Get packages & executable files" choose your operating system, then choose your build of choice.
+
 ### 3. Set Up Environment Variables
 
 Create a `.env` file at the root of the project (use `.env.example` as a reference):
 
 ```env
-DISCORD_TOKEN=your_bot_token_here
+BOT_TOKEN=your_bot_token
 ```
 
 > 🔐 **Note**: `.env` is excluded from version control via `.gitignore`.
@@ -75,7 +78,7 @@ Update default messages in `constants/messages.py`:
 
 ```python
 PAUSE_MESSAGE = "⏸️ Playback is paused."
-STOP_MESSAGE = "🛑 Music stopped."
+STOP_MESSAGE = "🛑 Music is stopped."
 ```
 
 ### 5. Run the Bot
@@ -85,7 +88,7 @@ python main.py
 
 ---
 
-## 🪪 License
+## 📜 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You’re free to fork, modify, or contribute.
 
